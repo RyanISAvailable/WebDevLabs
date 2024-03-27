@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "author" content="Ryan Tian">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "description" content="This will serve as a personal website for Ryan Tian">
+    <meta name ="keywords" content="Carnegie Mellon University Information Systems">
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script><!-- the other jquery was causing issues -->
+    <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCR1Q_s_QYdhIz71epEDYQMrLFARoKsqJk&callback=initMap"></script> -->
+    <script defer src="../static/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ryan's Little Space</title>
+</head>
+<body>
+    <header>
+        <h1 id="webName">
+            Ryan Tian
+        </h1>
+        <nav id="myTopnav" class="topnav">
+            <a href="../index.html">Home</a>
+            <a href="CV.html">CV</a>
+            <a href="contact.html" class="active">Contact Me</a>
+            <a href="fun.html">For Fun</a>
+            <a href="javascript:void(0);" class="icon" >
+                <i class="fa fa-bars" onclick="activeNav()"></i></a>
+        </nav>
+    </header>
+    <div class="main">
+        <h2>
+            Contact Me!
+        </h2>
+        <form action="">
+            <label for="UserName">Your name (required): </label>
+            <input type="text" name="UserName" id="UserName" required>
+            <label for="UserEmail">Your email (required): </label>
+            <input type="email" name="UserEmail" id="UserEmail" required>
+            <label for="UserText">Your text (required): </label>
+            <textarea name="UserText" id="UserText" cols="30" rows="10" required></textarea>
+            <input type="submit" value="Send" onclick="validate()">
+        </form>
+ 
+        <p id="ValidateMsg"></p>
+            
+            <!-- <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="comment">Your Comments or Questions:</label>
+
+            <textarea name="comment" id="" cols="30" rows="10" required></textarea>
+
+            <input type="submit" value="SEND"> -->
+
+        <table>
+            <tr>
+                <th>Contact Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>rxt@andrew.cmu.edu</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>412-710-6793</td>
+            </tr>
+            <tr>
+                <td>LinkedIn</td>
+                <td><a href="https://www.linkedin.com/in/ryan-tian-452478174/" target="_blank">Ryan's LinkedIn</a></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <p>
+            Ryan Tian &copy; 2024
+        </p>
+    </footer>
+</body>
+</html>
